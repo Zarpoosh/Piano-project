@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e3f2fd;
+}
+
+.wrapper {
+  width: 780px;
+  border-radius: 20px;
+  padding: 35px 40px;
+  background-color: #141414;
+}
+
+.piano-keys .key {
+  list-style: none;
+  color: #a2a2a2;
+}
+.wrapper header {
+  color: #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h2 {
+  font-size: 1.6rem;
+}
+header .column {
+  display: flex;
+  align-items: center;
+}
+header .column span {
+  font-weight: 500;
+  font-size: 1.19rem;
+  margin-right: 15px;
+}
