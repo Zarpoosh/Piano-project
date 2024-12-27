@@ -21,6 +21,7 @@ body {
 }
 
 .piano-keys .key {
+  cursor: pointer;
   list-style: none;
   color: #a2a2a2;
   user-select: none;
@@ -33,15 +34,18 @@ body {
   font-size: 1.13rem;
   text-align: center;
 }
-.piano-keys .white:active{
-    box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to bottom , #fff0 , #eee 100%);
-
+.piano-keys .white:active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fff0, #eee 100%);
+}
+.piano-keys .black:active {
+  box-shadow: inset -5px 5px 10px rgba(225, 225, 225, 0.1);
+  background: linear-gradient(to bottom, #000, #434343);
 }
 .piano-keys .white {
   width: 70px;
   height: 230px;
-  border: 1x solid #000;
+  border: 1px solid #000;
   border-radius: 8px;
   background: linear-gradient(#fff 96%, #eee 4%);
 }
@@ -74,13 +78,16 @@ header .column span {
 .volume-slider input {
   accent-color: #fff;
 }
+.piano-keys .key:hover {
+  background-color: #ddd; /* جلوه بصری هنگام حرکت موس */
+}
 .key-checkbox input {
-  position: relative;
+  cursor: pointer; /* موس برای چک‌باکس */
   appearance: none;
+  position: relative;
   width: 60px;
-  border-radius: 30px;
-  cursor: pointer;
   height: 30px;
+  border-radius: 30px;
   background: #4b4b4b;
 }
 .key-checkbox input::before {
